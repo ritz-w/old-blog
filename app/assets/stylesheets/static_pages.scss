@@ -1,0 +1,124 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+//foreground CSS
+#wrapper{
+    position: relative;
+    width: 100%;
+    z-index: -100;
+}
+
+.content{
+    color: black;
+    font-family: 'Rasa', Times New Roman;
+    font-size: 1em;
+    padding: 10% 15%;
+    font-weight: bold;
+    position: relative;
+    z-index: 100;
+}
+
+
+
+//navbar CSS
+
+.dropdown-menu {
+  border: 1px solid black;
+  font-family: 'Rasa', sans-serif;
+  font-size: 1em;
+}
+
+.links-list {
+    min-width: 0px;
+}
+
+.navigation {
+  float: right; 
+  margin: 3%; 
+  width: 15%;
+}
+
+#dropdown-button {
+  background: transparent;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 1.2vw;
+  border: 0px;
+  color: black;
+}
+
+#trapezoid {
+  border-bottom: 10vw solid black;
+  border-left: 5vw solid transparent;
+  border-right: 5vw solid transparent;
+  height: 0;
+}
+
+
+//background CSS
+.background{
+    color: #999999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    width: 100%;
+}
+
+.site-title {
+    margin-top: 3%;
+    color: black;
+    font-size: 4vw;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-weight: bold;
+}
+
+.top-of-page-divs {
+  display: flex;
+}
+.corner1 {
+    background-color: white;
+    width: 10%;
+    border-top: 5.5vw solid black;
+    border-left: 5.5vw solid black;
+    padding: 10%;
+    margin: 3%;
+}
+.dashes {
+    background-color: white;
+    width: 1vw;
+    border-top: 5vw solid black;
+    border-bottom: 1vw solid black;
+    padding: 2.8vw;
+    margin: 3%;
+}
+
+.corner2 {
+    background-color: white;
+    width: 10%;
+    border-bottom: 5.5vw solid black;
+    border-left: 5.5vw solid black;
+    padding: 10%;
+    margin-top: 5%;
+    margin-left: 3%;
+}
+
+//for mobile version
+@media (max-width: 768px) {
+  .navbar {
+    float: right; 
+    margin: 3%; 
+    width: 15%;
+  }
+
+  .dropdown-menu {
+    margin-left: -50%;
+    font-size: 0.8em;
+  }
+
+#dropdown-button {
+    margin-left: 10%;
+  }
+
+}
