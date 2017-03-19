@@ -25,7 +25,7 @@ $(document).ready(function(){
         }
       },
       {
-        breakpoint: 800,
+        breakpoint: 912,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2
