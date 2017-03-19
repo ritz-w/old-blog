@@ -1,8 +1,41 @@
 
-
+<h1 id="category">Art and Design</h1>
 <div class="responsive">
     <% @posts.each do |post| %>
+    <div class="flex-post">
+    <h3 class="post-title"><%= post.title %></h3>
       <div class="landing-slider">
-        <%= image_tag(posts.image_1, :class => "slider-image") %>
+        <%= image_tag(post.image_1, :class=>"slider-image") %>
       </div>
+      <div class="slider-preview-text">
+      <%= post.content %>
+      </div>
+    </div>
     <% end %>
+</div>
+
+<h1 id="category">Web Development</h1>
+<div class="responsive">
+  <% @posts.each do |post| %>
+    <div class="flex-post">
+    <h3 class="post-title"><%= post.title %></h3>
+      <div class="landing-slider">
+        <%= image_tag(post.image_2, :class=>"slider-image") %>
+      </div>
+    </div>
+    <% end %>
+</div>
+
+
+
+<h1 id="category">Life</h1>
+<div class="responsive">
+  <% @posts.each do |post| %>
+    <div class="flex-post">
+    <h3 class="post-title"><%= post.title %></h3>
+      <div class="landing-slider">
+        <%= image_tag(post.image_1, :class=>"slider-image") %>
+      </div>
+    </div>
+    <% end %>
+</div>

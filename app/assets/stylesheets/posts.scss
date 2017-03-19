@@ -2,6 +2,21 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+
+//table controls
+.table-post-content {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 20px;     /* fallback */
+  max-height: 150px;      /* fallback */
+  -webkit-line-clamp: 6; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+
+//slider controls
 .responsive {
   width: 100%;
 }
@@ -34,7 +49,7 @@
   text-overflow: ellipsis;
   display: -webkit-box;
   line-height: 16px;     /* fallback */
-  max-height: 70px;      /* fallback */
+  max-height: 48px;      /* fallback */
   -webkit-line-clamp: 3; /* number of lines to show */
   -webkit-box-orient: vertical;
 }
