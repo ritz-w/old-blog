@@ -17,14 +17,15 @@
         <div class="navigation">
         <div id="trapezoid">
         </div> 
-      <div class="dropdown">
+      <div class="dropup">
         <button class="btn btn-primary dropdown-toggle" id="dropdown-button" type="button" data-toggle="dropdown">NAV
         <span class="caret"></span>
         </button>
         <ul class="dropdown-menu links-list">
-         <li><a href="#">HTML</a></li>
-          <li><a href="#">CSS</a></li>
-          <li><a href="#">JavaScript</a></li>
+        <li><%= link_to 'Home', static_pages_index_path %> </li>
+         <li><%= link_to 'Add/Edit Posts', posts_path %> </li>
+          <li><a href="http://ritz-site.bitballoon.com">See My Portfolio</a></li>
+          <li><a href="#">About this Blog</a></li>
         </ul>
       </div>  
     </div>   

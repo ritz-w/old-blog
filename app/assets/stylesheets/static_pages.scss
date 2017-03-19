@@ -21,10 +21,18 @@
 //navbar CSS
 
 .dropdown-menu {
-  border: 1px dotted black;
+  border: 2px solid black;
   font-family: 'Rasa', sans-serif;
   font-size: 1em;
-  position: relative;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  transition: height 1s ease;
+}
+
+.dropup .dropdown-menu {
+  margin-bottom: 0px;
 }
 
 .links-list {
@@ -54,6 +62,7 @@
   border-left: 5vw solid transparent;
   border-right: 5vw solid transparent;
   height: 0;
+  position: relative;
 }
 
 
@@ -101,7 +110,8 @@
     border-bottom: 5.5vw solid black;
     border-left: 5.5vw solid black;
     padding: 6%;
-    margin-left: 3%;
+    margin-left: -10%;
+    position: static;
 }
 
 //for mobile version

@@ -76,10 +76,8 @@
 {
     display: none;
     float: left;
-
-    height: 100%;
-    max-height: 350px;
 }
+
 [dir='rtl'] .slick-slide
 {
     float: right;

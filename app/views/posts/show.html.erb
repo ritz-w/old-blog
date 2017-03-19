@@ -1,29 +1,28 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @post.title %>
-</p>
+<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Content:</strong>
-  <%= @post.content %>
-</p>
+<h2>
+  <%= @post.created_at %> <br> <%= @post.title %>
+</h2>
+<div class="single-slider-holder">
+<div class="single-slider">
+  <div>
+    <%= image_tag(@post.image_1, :class=>"single-slider-image") %>
+  </div>
+  <div>
+    <%= image_tag(@post.image_2, :class=>"single-slider-image") %>
+  </div>
+    <div>
+    <%= image_tag(@post.image_3, :class=>"single-slider-image") %>
+  </div>
+</div>
+<div class="show-post-content">
+<br>
+  <button class="btn btn-default"><%= link_to 'Edit', edit_post_path(@post) %></button> 
+  <button class="btn btn-default"><%= link_to 'Back', static_pages_index_path %></button> <br><br>
+    <%= @post.content %>
+</div>
 
-<p>
-  <strong>Image 1:</strong>
-  <%= @post.image_1 %>
-</p>
 
-<p>
-  <strong>Image 2:</strong>
-  <%= @post.image_2 %>
-</p>
 
-<p>
-  <strong>Image 3:</strong>
-  <%= @post.image_3 %>
-</p>
-
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>

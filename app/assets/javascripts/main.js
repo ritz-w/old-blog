@@ -43,6 +43,11 @@ $(document).ready(function(){
     // instead of a settings object
     ]
     }); 
+  $('.single-slider').slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 2
+    });
   })
 }
   
