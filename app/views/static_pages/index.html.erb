@@ -1,7 +1,7 @@
 
 <h1 id="category">Art and Design</h1>
 <div class="responsive">
-    <% @posts.each do |post| %>
+    <% @posts.where(:tag => 'artdesign').each do |post| %>
     <div class="flex-post">
     <h3 class="post-title"><%= post.title %></h3>
       <div class="landing-slider">
@@ -26,16 +26,14 @@
     <% end %>
 </div>
 
-
-
 <h1 id="category">Life</h1>
 <div class="responsive">
-  <% @posts.each do |post| %>
+   <% @posts.where(:tag => 'life').each do |post| %>
     <div class="flex-post">
     <h3 class="post-title"><%= post.title %></h3>
       <div class="landing-slider">
-        <%= image_tag(post.image_1, :class=>"slider-image") %>
+        <%= link_to image_tag(post.image_1, :class=>"slider-image"), polymorphic_url(post) %>
       </div>
     </div>
-    <% end %>
+  <% end %>
 </div>
