@@ -5,19 +5,15 @@
 
 //foreground CSS
 #wrapper{
-    position: relative;
     width: 100%;
-    z-index: -100;
 }
 
 .content{
     color: black;
     font-family: 'Rasa', Times New Roman;
     font-size: 1em;
-    padding: 10% 15%;
+    padding: 10% 3% 3% 12%;
     font-weight: bold;
-    position: relative;
-    z-index: 100;
 }
 
 
@@ -28,6 +24,7 @@
   border: 1px dotted black;
   font-family: 'Rasa', sans-serif;
   font-size: 1em;
+  position: relative;
 }
 
 .links-list {
@@ -36,8 +33,12 @@
 
 .navigation {
   float: right; 
-  margin: 3%; 
+  margin-top: 3%;
+  margin-right: 3%; 
   width: 15%;
+  z-index: 100;
+  right: 5px;
+  top: 5px;
 }
 
 #dropdown-button {
@@ -99,8 +100,7 @@
     width: 10%;
     border-bottom: 5.5vw solid black;
     border-left: 5.5vw solid black;
-    padding: 10%;
-    margin-top: 5%;
+    padding: 6%;
     margin-left: 3%;
 }
 

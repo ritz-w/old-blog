@@ -1,0 +1,73 @@
+<p id="notice"><%= notice %></p>
+
+<!-- <table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Content</th>
+      <th>Image 1</th>
+      <th>Image 2</th>
+      <th>Image 3</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody> -->
+<h1 id="category">Art and Design</h1>
+<div class="responsive">
+    <% @posts.each do |post| %>
+    <div class="flex-post">
+    <h3 class="post-title"><%= post.title %></h3>
+      <div class="landing-slider">
+        <%= image_tag(post.image_1, :class=>"slider-image") %>
+      </div>
+      <div class="slider-preview-text">
+      <%= post.content %>
+      </div>
+    </div>
+    <% end %>
+</div>
+
+<h1 id="category">Web Development</h1>
+<div class="responsive">
+  <% @posts.each do |post| %>
+    <div class="flex-post">
+    <h3 class="post-title"><%= post.title %></h3>
+      <div class="landing-slider">
+        <%= image_tag(post.image_2, :class=>"slider-image") %>
+      </div>
+    </div>
+    <% end %>
+</div>
+
+
+
+<h1 id="category">Life</h1>
+<div class="responsive">
+  <% @posts.each do |post| %>
+    <div class="flex-post">
+    <h3 class="post-title"><%= post.title %></h3>
+      <div class="landing-slider">
+        <%= image_tag(post.image_1, :class=>"slider-image") %>
+      </div>
+    </div>
+    <% end %>
+</div>
+<!--     <% @posts.each do |post| %>
+      <tr>
+        <td><%= post.title %></td>
+        <td><%= post.content %></td>
+        <td><%= post.image_1 %></td>
+        <td><%= post.image_2 %></td>
+        <td><%= post.image_3 %></td>
+        <td><%= link_to 'Show', post %></td>
+        <td><%= link_to 'Edit', edit_post_path(post) %></td>
+        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table> -->
+
+<!-- <br>
+
+<%= link_to 'New Post', new_post_path %> -->

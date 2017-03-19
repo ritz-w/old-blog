@@ -1,0 +1,45 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.responsive {
+  width: 100%;
+}
+.landing-slider {
+  min-height: 200px;
+}
+
+.slider-image {
+  max-height: 200px;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.flex-post {
+  display: flex;
+  flex-direction: column;
+  min-width: 250px;
+  max-width: 21vw;
+}
+
+.post-title {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.slider-preview-text {
+  margin: 10px auto;
+  width: 230px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 16px;     /* fallback */
+  max-height: 70px;      /* fallback */
+  -webkit-line-clamp: 3; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+#category {
+  font-size: 2em;
+}
+

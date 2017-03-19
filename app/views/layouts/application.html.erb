@@ -13,7 +13,8 @@
   </head>
 
   <body>
-    <div class="navigation">
+    <div id="wrapper">
+        <div class="navigation">
         <div id="trapezoid">
         </div> 
       <div class="dropdown">
@@ -27,19 +28,16 @@
         </ul>
       </div>  
     </div>   
-
-
-    <div id="wrapper">
       <div class="content">    
          <%= yield %> 
       </div> 
+              <div class="corner2"></div>
       <div class="background">
         <div class="top-of-page-divs">
           <div class="corner1"></div>      
           <div class="site-title">B&nbsp;&nbsp;&nbsp;L&nbsp;&nbsp;O&nbsp;G</div>
         </div>
         <div class="dashes"></div>
-        <div class="corner2"></div>
       </div>
     </div>
   </body>
