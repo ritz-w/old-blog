@@ -20,7 +20,7 @@
     <div class="flex-post">
     <h3 class="post-title"><%= post.title %></h3> 
       <div class="landing-slider">
-        <%= image_tag(post.image_1, :class=>"slider-image") %>
+        <%= link_to image_tag(post.image_1, :class=>"slider-image"), polymorphic_url(post) %>
       </div>
       <div class="slider-preview-text">
       <%= post.created_at.to_date %> : <%= post.content %>
