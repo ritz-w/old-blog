@@ -3,6 +3,16 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+//
+
+.buttons-row {
+  display: flex;
+}
+#post_content {
+  width: 60%;
+  height: 300px;
+}
+
 //single slider settings
 
 
@@ -13,6 +23,7 @@
   width: 80%;
   margin: 0 auto;
   line-height: 1.5em;
+  white-space: pre-wrap;
 }
 
 .single-slider-holder {
@@ -52,6 +63,8 @@
   max-height: 200px;
   max-width: 250px;
   margin: 0 auto;
+  min-height: 190px;
+
 }
 
 .flex-post {

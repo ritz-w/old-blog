@@ -2,7 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
+//about page
+.my-image {
+  width: 30%;
+  margin: 0 30%;
+}
 //foreground CSS
 #wrapper{
     width: calc( 100% - 40px );
@@ -15,8 +19,6 @@
     padding: 10% 3% 3% 12%;
     font-weight: bold;
 }
-
-
 
 //navbar CSS
 

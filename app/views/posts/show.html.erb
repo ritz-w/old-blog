@@ -1,9 +1,7 @@
 <p id="notice"><%= notice %></p>
 
-<p id="notice"><%= notice %></p>
-
 <h2>
-  <%= @post.created_at %> <br> <%= @post.title %>
+  <%= @post.created_at.to_date %> <br> <%= @post.title %>
 </h2>
 <div class="single-slider-holder">
 <div class="single-slider">
@@ -18,9 +16,10 @@
   </div>
 </div>
 <div class="show-post-content">
-<br>
+  <div class="buttons-row">
   <button class="btn btn-default"><%= link_to 'Edit', edit_post_path(@post) %></button> 
-  <button class="btn btn-default"><%= link_to 'Back', static_pages_index_path %></button> <br><br>
+  <button class="btn btn-default"><%= link_to 'Back', static_pages_index_path %></button>
+  </div>
     <%= @post.content %>
 </div>
 
