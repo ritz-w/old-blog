@@ -2,7 +2,6 @@
 document.addEventListener("turbolinks:load", function() {
   docReadyJS();
 })
-
 //on page load
 var docReadyJS = function() {
   //when document is ready
@@ -48,6 +47,13 @@ $(document).ready(function(){
         slidesToShow: 2,
         slidesToScroll: 2
     });
+
+  if($(window).width() < 700) {
+    $(".dropup").addClass("dropdown").removeClass("dropup");
+     $(".dropdown-menu").css("width", "inherit");
+    return false;
+  };
+
   })
 }
   
