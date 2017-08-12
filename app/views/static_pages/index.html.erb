@@ -3,12 +3,12 @@
 <div class="responsive">
     <% @posts.where(:tag => 'artdesign').each do |post| %>
     <div class="flex-post">
-      <h3 class="post-title"><%= post.title %></h3>
+      <h3 class="post-title"><%= post.created_at.strftime("%d %B %Y") %> <br> <%= post.title %></h3> 
       <div class="landing-slider">
         <%= link_to image_tag(post.image_1, :class=>"slider-image"), polymorphic_url(post) %>
       </div>
       <div class="slider-preview-text">
-      <%= post.created_at.to_date %> : <%= post.content %>
+      <%= post.content %>
       </div>
     </div>
     <% end %>
@@ -18,12 +18,12 @@
 <div class="responsive">
   <% @posts.where(:tag => 'webdev').each do |post| %>
     <div class="flex-post">
-    <h3 class="post-title"><%= post.title %></h3> 
+    <h3 class="post-title"><%= post.created_at.strftime("%d %B %Y") %> <br> <%= post.title %></h3> 
       <div class="landing-slider">
         <%= link_to image_tag(post.image_1, :class=>"slider-image"), polymorphic_url(post) %>
       </div>
       <div class="slider-preview-text">
-      <%= post.created_at.to_date %> : <%= post.content %>
+      <%= post.content %>
       </div>
     </div>
     <% end %>
@@ -33,12 +33,12 @@
 <div class="responsive">
    <% @posts.where(:tag => 'life').each do |post| %>
     <div class="flex-post">
-      <h3 class="post-title"><%= post.title %></h3>
+      <h3 class="post-title"><%= post.created_at.strftime("%d %B %Y") %> <br> <%= post.title %></h3> 
       <div class="landing-slider">
         <%= link_to image_tag(post.image_1, :class=>"slider-image"), polymorphic_url(post) %>
       </div>
       <div class="slider-preview-text">
-       <%= post.created_at.to_date %> : <%= post.content %>
+       <%= post.content %>
       </div>
     </div>
   <% end %>
